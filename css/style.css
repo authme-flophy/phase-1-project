@@ -1,0 +1,45 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 1rem 1rem;
+  /* border: 1px solid black; */
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: rgb(209, 210, 210);
+}
+
+img {
+  width: 100%;
+}
+
+#title {
+  font-size: 1.3rem;
+  padding: .5rem
+}
+
+#button-container {
+  width: 100%;
+  
+}
+
+#favourite-button {
+  width: 50%;
+}
+
+#like-button {
+  width: 50%;
+}

@@ -22,9 +22,23 @@ fetch("https://itunes.apple.com/us/rss/topalbums/limit=20/json")
     artist.id = "artist"
     artist.textContent = element["im:artist"].label
 
+    const buttonContainer = document.createElement("div")
+    buttonContainer.id = "button-container"
+
+    const favourite = document.createElement("button")
+    favourite.id = "favourite-button"
+    favourite.textContent = "★"
+    const like = document.createElement("button")
+    like.id = "like-button"
+    like.textContent = "❤"
+
+    buttonContainer.appendChild(favourite)
+    buttonContainer.appendChild(like)
+    
     albumCard.appendChild(albumCover)
     albumCard.appendChild(albumTitle)
     albumCard.appendChild(artist)
+    albumCard.appendChild(buttonContainer)
 
     document.getElementsByClassName("container")[0].appendChild(albumCard)
   
