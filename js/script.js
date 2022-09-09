@@ -48,15 +48,8 @@ fetch("https://itunes.apple.com/us/rss/topalbums/limit=20/json")
     favourite.id = "favourite-button"
     favourite.textContent = "★"
 
-    // creating the favourite button and adding a materialize class to it
-    const like = document.createElement("button")
-    like.classList.add("waves-effect", "waves-light", "btn")
-    like.id = "like-button"
-    like.textContent = "❤"
-
     // adding the favourite and like buttons to the button container
     buttonContainer.appendChild(favourite)
-    buttonContainer.appendChild(like)
     
     // adding the img, h2, p and button container to the album card
     albumCard.appendChild(albumCover)
@@ -110,5 +103,8 @@ document.addEventListener("click", event => {
 })
 
 
-
-
+document.addEventListener("click", event => {
+  if (event.target.className === "card") {
+    event.target.classList.add("purple", "lighten-4")
+  }
+})
