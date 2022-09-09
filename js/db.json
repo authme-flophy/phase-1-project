@@ -1,0 +1,24 @@
+{
+  "favourite-songs": [
+    {
+      "artist": "Wisdom",
+      "album": "Stick Figure",
+      "id": 1
+    },
+    {
+      "album": "Different Man",
+      "artist": "Kane Brown",
+      "id": 2
+    },
+    {
+      "album": "Anthem",
+      "artist": "Flogging Molly",
+      "id": 3
+    },
+    {
+      "album": "Wisdom",
+      "artist": "Stick Figure",
+      "id": 4
+    }
+  ]
+}

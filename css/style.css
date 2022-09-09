@@ -20,12 +20,21 @@
   /* border: 1px solid black; */
   border-radius: 5px;
   overflow: hidden;
-  background-color: rgb(209, 210, 210);
+}
+
+.card-image {
+  width: 100%;
+}
+
+.card-action {
+  width: 100%;
 }
 
 img {
   width: 100%;
 }
+
+
 
 #title {
   font-size: 1.3rem;
@@ -37,10 +46,10 @@ img {
   
 }
 
-#favourite-button {
+/* #favourite-button {
   width: 50%;
 }
 
 #like-button {
   width: 50%;
-}
+} */
