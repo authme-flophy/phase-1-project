@@ -45,3 +45,10 @@ fetch("https://itunes.apple.com/us/rss/topalbums/limit=20/json")
   
   });
 })
+
+document.addEventListener("click", event => {
+  // console.log(event.target.id);
+  if (event.target.id === "favourite-button") {
+    console.log("we here");
+  }
+})
